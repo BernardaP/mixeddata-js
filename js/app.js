@@ -229,3 +229,52 @@ for (let i = 0; i< bondFilms.length; i++){
 }
 console.log(oddBonds);
 
+console.log("---------------------------");
+console.log("-------------Q6------------");
+console.log("---------------------------");
+
+// 7. Determine the total cumulative gross of the Bond franchise, and console.log the result.
+// Hint: To make the grosses into usable numbers, look into the .replace Javascript method 
+// (there are many ways to do this, however). Look into parseInt() also.
+
+//TEST 
+//  Remove the dollar symbol using substring() method before converting the string to numbers
+// use replace()method with the global modifier / /g to replace all occurrences of the value
+// const grossBond = bondFilms[0].gross.substring(1).replace(/,/g,'');
+// console.log(parseInt(grossBond));
+
+const grossBondFilms = []
+for (let i = 0; i< bondFilms.length; i++){
+    if (bondFilms[i].gross) {
+        grossBondFilms.push(parseInt(bondFilms[i].gross.substring(1).replace(/,/g,'')))
+    }
+}
+
+// create new array for total cummulative gross and use reduce() method 
+// reduce() takes two parameters: a function with an accumulator and the initialValue
+
+const totalGross = grossBondFilms.reduce(
+    function (a, b) {
+        return a+b;
+    }, 0
+);
+
+console.log(totalGross);
+
+
+
+
+// console.log(1108561008 + 1014941117 + 912257512 + 825110761 + 756544419+ 692713752 + 669789482+ 655872400 + 648514469 + 622246378+ 576277964 + 543639638 + 529548711 + 505899782 + 491617153 + 486468881 + 478946402 + 448249281 + 440759072 + 426244352 + 381088866 + 321172633 + 285157191)
+
+// function totalGross(total, num){
+//     return total + num;
+// }
+
+// console.log(grossBondFilms.reduce(totalGross, 0));
+
+
+//
+// const numbersGross = grossBondFilms.replace();
+
+// console.log(numbersGross);
+
