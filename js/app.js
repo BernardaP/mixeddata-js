@@ -211,11 +211,21 @@ for (let i = 0; i< bondFilms.length; i++){
     if (bondFilms[i].title) {
         bondTitles.push(bondFilms[i].title)
     }
-
 }
+
 console.log(bondTitles);
-// for (let i = 0; i < solarSystem.length; i++) {
-//     if (solarSystem[i].ringSystem === true) {
-//         console.log(solarSystem[i])
-//         }   
-//     }
+
+console.log("---------------------------");
+console.log("-------------Q6------------");
+console.log("---------------------------");
+
+// 6. Create a new array oddBonds, of only the Bond films released on odd-numbered years.
+const oddBonds = [ ]
+
+for (let i = 0; i< bondFilms.length; i++){
+    if (bondFilms[i].year % 2 !== 0 ) {
+        oddBonds.push(bondFilms[i].title)
+    }
+}
+console.log(oddBonds);
+
