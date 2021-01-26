@@ -65,3 +65,27 @@ let studentsList = [
     }
      //....    
 ]
+
+console.log("---------------------------");
+console.log("-------------Q2------------");
+console.log("---------------------------");
+
+//1. Make an array that holds all of the colors of the rainbow.
+let rainbowColors = [ 
+    "Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet" 
+] 
+
+// 2. Write code that will access "blue" from the rainbow array.
+console.log(rainbowColors[4]);
+
+// 3. Make an object that is called your name and holds the information about your favorite food, 
+// a hobby, the name of the town that you live in currently, and your favorite datatype.
+ let bernarda = {
+    favFood: "Stuff peppers",
+    hobby: "reading",
+    location: "Aurora",
+    favDataType: "Strings"
+}
+
+// 4. Write code that will access your hobby from the object that you just created.
+console.log(bernarda.hobby);
