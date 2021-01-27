@@ -12,42 +12,44 @@ console.log("---------------------------");
 let lightSwitch = {
     isOn: true,
 }
-console.log(lightSwitch);
+// console.log(lightSwitch);
 
 // A user's email address.
 // Data type: string
 let user = {
     email: "anemail.com",
 }
+// console.log(user);
 
 // A spaceship with a hull, laser blasters, tractor beam, and warp drive.
 // Data type: object
-let spaceship = {
+let spaceShip = {
     hull: "blue",
     laserTypes: "laser blasters",
     isTractorBeam: true,
     propulsionSystem: "warp drive"
 }
+// console.log(spaceShip);
 
 // A list of student names from our class.
 //Data type: Array
 let studentsNames = ["Jim", "Carolina", "Eddy", "Robert", "Ivy"]
+// console.log(studentsNames);
 
 // A list of student names from our class, each with a location.
 //Data type: array of objects
-let students = [
+let studentsLocations = [
    {
     name: "Jim",
-    location: "California",
-    favFood: "Hamburguers"
+    location: "California"  
    },
    {
     name: "Carolina",
-    location: "Chicago", 
-    favFood: "Hamburguers"
+    location: "Chicago"    
    }
     //....    
 ]
+// console.log(studentsLocations);
 
 // A list of student names from our class, each with a location and each with a list of favorite tv shows.
 let studentsList = [
@@ -65,6 +67,7 @@ let studentsList = [
     }
      //....    
 ]
+// console.log(studentsList);
 
 console.log("---------------------------");
 console.log("-------------Q2------------");
@@ -74,6 +77,7 @@ console.log("---------------------------");
 let rainbowColors = [ 
     "Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet" 
 ] 
+// console.log(rainbowColors);
 
 // 2. Write code that will access "blue" from the rainbow array.
 console.log(rainbowColors[4]);
@@ -86,6 +90,7 @@ console.log(rainbowColors[4]);
     location: "Aurora",
     favDataType: "Strings"
 }
+// console.log (bernarda);
 
 // 4. Write code that will access your hobby from the object that you just created.
 console.log(bernarda.hobby);
@@ -254,12 +259,12 @@ for (let i = 0; i< bondFilms.length; i++){
 // reduce() takes two parameters: a function with an accumulator and the initialValue
 
 const totalGross = grossBondFilms.reduce(
-    function (a, b) {
-        return a+b;
+    function (total, num) {
+        return total + num;
     }, 0
 );
 
-console.log(totalGross);
+console.log("$" + totalGross);
 
 
 
